@@ -7,11 +7,11 @@ int main() {
     while (s < 50 && n < 20) {
         cout << "Делайте выстрел: ";
         cin >> x >> y;
-        n += 1;
+        n++;
         r = x * x + y * y;
         if (r <= 1) s += 10;
         else if (r <= 4) s += 5;
-        else if (r <= 9) s += 1;
+        else if (r <= 9) s++;
     }
     cout << "Сумма очков = " << s << endl;
     cout << "Количество попыток = " << n << endl;
