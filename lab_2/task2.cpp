@@ -2,15 +2,21 @@
 using namespace std;
 
 int main() {
-    double a, b, c;
-    cin >> a >> b >> c;
-    if (a > b) {
-        if (a > c) cout << a;
-        else cout << c;
+    int x, s = 0;
+    char c, last1 = '\0', last2 = '\0';
+    for (int i = 9; i >= 1; i--) {
+        cin >> c;
+        if ((c == last1) && (c == last2)) {
+            cout << "False";
+            return 0;
+        }
+        s += (c - '0') * i;
+        last2 = last1;
+        last1 = c;
     }
-    else {
-        if (b > c) cout << b;
-        else cout << c;
-    }
+    s %= 101;
+    cin >> x;
+    if (s < 100) cout << (x == s ? "True" : "False");
+    else cout << (x == 0 ? "True" : "False");
     return 0;
 }
