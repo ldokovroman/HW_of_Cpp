@@ -14,21 +14,23 @@ struct Time {
         }
         else cerr << "Неправильный формат времени" << endl;
     }
+
     bool check_time(int hh, int mm, int ss) {
         return 0 <= hh && hh <= 23 &&
                0 <= mm && mm <= 60 &&
                0 <= ss && ss <= 60;
     }
+
     int count_seconds() {
         return hours * 3600 + minutes * 60 + seconds;
     }
 
     void make_out_seconds() {
-        this->hours = this->seconds / 3600;
-        this->seconds %= 3600;
-        this->minutes = this->seconds / 60;
-        this->seconds %= 60;
-    };
+        hours = seconds / 3600;
+        seconds %= 3600;
+        minutes = seconds / 60;
+        seconds %= 60;
+    }
 
     Time diff_time(Time &time) {
         Time res;
@@ -43,7 +45,6 @@ struct Time {
         res.make_out_seconds();
         return res;
     }
-
 };
 
 int main() {
