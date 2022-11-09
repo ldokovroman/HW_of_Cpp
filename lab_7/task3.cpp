@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-using Answers = tuple<double, double, int>;
+using Answers = tuple <double, double, int>;
 
 Answers solution_qe(double a, double b, double c) {
     Answers answer;

@@ -5,8 +5,8 @@ struct Time {
     int hours;
     int minutes;
     int seconds;
-    Time () {}
-    Time (int hh, int mm, int ss) {
+    Time() {}
+    Time(int hh, int mm, int ss) {
         if (check_time(hh, mm, ss)) {
             hours = hh;
             minutes = mm;
@@ -16,9 +16,9 @@ struct Time {
     }
 
     bool check_time(int hh, int mm, int ss) {
-        return 0 <= hh && hh <= 23 &&
-               0 <= mm && mm <= 60 &&
-               0 <= ss && ss <= 60;
+        return 0 <= hh && hh < 24 &&
+               0 <= mm && mm < 60 &&
+               0 <= ss && ss < 60;
     }
 
     int count_seconds() {
