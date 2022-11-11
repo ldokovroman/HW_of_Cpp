@@ -32,8 +32,8 @@ int main() {
         Triangle t(a, b, c);
         cout << "Площадь треугольника = " << t.square();
     }
-   catch (const char * message) {
-       cout << message;
-   }
-   return 0;
+    catch (const char * message) {
+        cout << message;
+    }
+    return 0;
 }
