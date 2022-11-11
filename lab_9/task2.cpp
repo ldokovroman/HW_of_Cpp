@@ -18,6 +18,7 @@ public:
         minutes = 0;
         seconds = 0;
     }
+
     Time(int hh, int mm, int ss) {
         if (check_time(hh, mm, ss)) {
             hours = hh;
