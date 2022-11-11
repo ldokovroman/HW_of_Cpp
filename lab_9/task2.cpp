@@ -62,7 +62,7 @@ private:
 };
 
 int main() {
-    unsigned hh, mm, ss;
+    int hh, mm, ss;
     try {
         cout << "Введите 1 время в формате \"hh mm ss\":" << endl;
         cin >> hh >> mm >> ss;
