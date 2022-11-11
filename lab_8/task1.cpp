@@ -9,6 +9,7 @@ public:
         minutes = 0;
         seconds = 0;
     }
+
     Time(unsigned hh, unsigned mm, unsigned ss) {
         hours = hh;
         minutes = mm;
