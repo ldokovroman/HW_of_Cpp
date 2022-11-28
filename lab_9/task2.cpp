@@ -69,7 +69,7 @@ int main() {
         Time time1(hh, mm, ss);
         cout << "Введите 2 время в формате \"hh mm ss\":" << endl;
         cin >> hh >> mm >> ss;
-        const Time time2(hh, mm, ss);
+        Time time2(hh, mm, ss);
         Time time3 = time1.diff_time(time2);
         time3.show();
     }
