@@ -2,7 +2,8 @@
 #include <cstdio>
 using namespace std;
 
-struct Time {
+class Time {
+public:
     Time() {
         hours = 0;
         minutes = 0;
@@ -51,6 +52,7 @@ struct Time {
         return res;
     }
 
+private:
     void make_out_seconds() {
         hours += seconds / 3600;
         seconds %= 3600;
@@ -64,10 +66,7 @@ struct Time {
 };
 
 Time operator+(unsigned ss, const Time &time) {
-    Time res;
-    res.seconds = ss + time.count_seconds();
-    res.make_out_seconds();
-    return res;
+    return time + ss;
 }
 
 int main() {
