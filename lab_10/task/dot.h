@@ -4,7 +4,7 @@ class Dot {
 public:
     Dot();
     Dot(double, double);
-    double distanceTo (Dot) const;
+    double distanceTo(Dot) const;
 
 private:
     double x;
