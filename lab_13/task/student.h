@@ -2,7 +2,7 @@
 #include "human.h"
 #include <vector>
 
-class Student : Human {
+class Student : public Human {
 public:
     Student(string last_name, string name, string second_name, vector <int> scores)
         : Human(last_name, name, second_name) {

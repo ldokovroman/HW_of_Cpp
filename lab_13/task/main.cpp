@@ -12,10 +12,10 @@ int main() {
     scores.push_back(3);
     scores.push_back(3);
     scores.push_back(3);
-    Student * student = new Student("Петров", "Иван", "Алексеевич", scores);
+    Human * student = new Student("Петров", "Иван", "Алексеевич", scores);
     student->get_full_data();
     unsigned teacher_work_time = 40;
-    Teacher * teacher = new Teacher("Сергеев", "Дмитрий", "Сергеев", teacher_work_time);
+    Human * teacher = new Teacher("Сергеев", "Дмитрий", "Сергеев", teacher_work_time);
     teacher->get_full_data();
     delete student;
     delete teacher;

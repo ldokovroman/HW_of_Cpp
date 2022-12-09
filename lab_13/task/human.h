@@ -16,6 +16,8 @@ public:
              << this->second_name << endl;
     }
 
+    virtual ~Human() {}
+
 private:
     string last_name;
     string name;

@@ -1,7 +1,7 @@
 #pragma once
 #include "human.h"
 
-class Teacher : Human {
+class Teacher : public Human {
 public:
     Teacher(string last_name, string name, string second_name, unsigned work_time)
         : Human(last_name, name, second_name) {
