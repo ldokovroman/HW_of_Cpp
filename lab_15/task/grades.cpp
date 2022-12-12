@@ -14,7 +14,7 @@ void Grades::delGrade(string name) {
 }
 
 void Grades::showGrades() const {
-    for (const auto &item: grades)
+    for (const auto &item : grades)
         cout << item.first << ' ' << item.second.grade << endl;
     cout << endl;
 }
