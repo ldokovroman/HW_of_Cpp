@@ -51,5 +51,5 @@ int main() {
     delete student3;
     delete student4;
     delete student5;
-	return 0;
+    return 0;
 }
