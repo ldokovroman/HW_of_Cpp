@@ -46,7 +46,7 @@ int main() {
     gr.delStudent(gr.findStudent("Семён", "Смирнов"));
     gr.GroupOut();
 
-	delete student1;
+    delete student1;
     delete student2;
     delete student3;
     delete student4;

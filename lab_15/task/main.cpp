@@ -14,5 +14,5 @@ int main() {
     grades.delGrade("Zhenya");
     cout << grades.size() << endl;
     grades.showGrades();
-	return 0;
+    return 0;
 }
