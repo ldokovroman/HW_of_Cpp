@@ -7,7 +7,7 @@ using namespace std;
 int main() {
     string name;
     string last_name;
-	IdCard * idc1 = new IdCard(123456, "Базовый");
+    IdCard * idc1 = new IdCard(123456, "Базовый");
     IdCard * idc2 = new IdCard(654321, "Базовый");
 
     cout << "Name: ";
