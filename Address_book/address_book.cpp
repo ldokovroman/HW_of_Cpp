@@ -12,10 +12,11 @@ Address_book::~Address_book() {
 
 void Address_book::save() const {
     ofstream output("address_book.txt", ios::out);
-    for (const auto &human : humans)
+    for (auto human : humans)
         output << human->get_full_data() << endl;
     output.close();
 }
+
 void Address_book::add_human(const Human * human) {
     humans.insert(human);
 }
